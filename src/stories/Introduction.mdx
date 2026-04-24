@@ -1,0 +1,97 @@
+import { Meta } from '@storybook/blocks'
+
+<Meta title="Введение" />
+
+<div style={{ fontFamily: "'Open Sans', system-ui, sans-serif", maxWidth: 800, padding: '40px 0' }}>
+
+<div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 32 }}>
+  <div style={{
+    width: 48, height: 48, borderRadius: 12,
+    background: 'linear-gradient(135deg, #7B52E0, #9478EF)',
+    flexShrink: 0
+  }} />
+  <div>
+    <h1 style={{ margin: 0, fontSize: 32, fontWeight: 700, lineHeight: '48px', color: '#12121A' }}>MDS</h1>
+    <p style={{ margin: 0, fontSize: 14, color: '#565668' }}>Design System</p>
+  </div>
+</div>
+
+<p style={{ fontSize: 18, lineHeight: '28px', color: '#393948', marginBottom: 40 }}>
+  Единая библиотека компонентов и токенов для продуктов компании.
+  Построена на React + TypeScript, полностью соответствует WCAG AA.
+</p>
+
+---
+
+## Что внутри
+
+<div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, margin: '24px 0' }}>
+
+<div style={{ padding: 24, borderRadius: 8, border: '1px solid #E4E4EC', background: '#FAFAFC' }}>
+  <div style={{ fontSize: 24, marginBottom: 8 }}>🎨</div>
+  <h3 style={{ margin: '0 0 8px', fontSize: 16, fontWeight: 700, color: '#12121A' }}>Токены</h3>
+  <p style={{ margin: 0, fontSize: 14, lineHeight: '20px', color: '#565668' }}>
+    Цвета, типографика, отступы, радиусы и z-index — напрямую из Figma Variables.
+    Поддержка Light и Dark темы.
+  </p>
+</div>
+
+<div style={{ padding: 24, borderRadius: 8, border: '1px solid #E4E4EC', background: '#FAFAFC' }}>
+  <div style={{ fontSize: 24, marginBottom: 8 }}>🧩</div>
+  <h3 style={{ margin: '0 0 8px', fontSize: 16, fontWeight: 700, color: '#12121A' }}>Компоненты</h3>
+  <p style={{ margin: 0, fontSize: 14, lineHeight: '20px', color: '#565668' }}>
+    React компоненты с TypeScript типами, CSS Modules и полным покрытием тестами.
+  </p>
+</div>
+
+<div style={{ padding: 24, borderRadius: 8, border: '1px solid #E4E4EC', background: '#FAFAFC' }}>
+  <div style={{ fontSize: 24, marginBottom: 8 }}>♿</div>
+  <h3 style={{ margin: '0 0 8px', fontSize: 16, fontWeight: 700, color: '#12121A' }}>Доступность</h3>
+  <p style={{ margin: 0, fontSize: 14, lineHeight: '20px', color: '#565668' }}>
+    Все компоненты соответствуют WCAG AA: контраст, фокус, aria-атрибуты.
+  </p>
+</div>
+
+<div style={{ padding: 24, borderRadius: 8, border: '1px solid #E4E4EC', background: '#FAFAFC' }}>
+  <div style={{ fontSize: 24, marginBottom: 8 }}>🌙</div>
+  <h3 style={{ margin: '0 0 8px', fontSize: 16, fontWeight: 700, color: '#12121A' }}>Dark Mode</h3>
+  <p style={{ margin: 0, fontSize: 14, lineHeight: '20px', color: '#565668' }}>
+    Встроенная тёмная тема через CSS Custom Properties и <code>[data-theme="dark"]</code>.
+  </p>
+</div>
+
+</div>
+
+---
+
+## Как использовать
+
+```tsx
+import { Button } from 'mds'
+
+<Button variant="primary" size="md">
+  Сохранить
+</Button>
+```
+
+Подключить токены в проект:
+
+```css
+@import 'mds/styles/tokens.css';
+@import 'mds/styles/reset.css';
+```
+
+---
+
+## Стек
+
+| | |
+|---|---|
+| Фреймворк | React 19 |
+| Язык | TypeScript 5 |
+| Стили | CSS Modules + CSS Custom Properties |
+| Тесты | Vitest + Testing Library |
+| Документация | Storybook 8 |
+| Токены | Figma Variables → CSS Custom Properties |
+
+</div>

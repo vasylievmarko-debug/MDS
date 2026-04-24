@@ -4,6 +4,11 @@ import '../src/styles/reset.css'
 
 const preview: Preview = {
   parameters: {
+    options: {
+      storySort: {
+        order: ['Введение', 'Токены', ['Цвета', 'Типографика'], 'Components'],
+      },
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,
