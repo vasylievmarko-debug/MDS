@@ -2,20 +2,20 @@
 .button {
   position: relative;
   display: inline-flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: var(--mds-space-8);
   font-family: var(--mds-font-family);
-  font-weight: var(--mds-font-weight-semibold);
-  line-height: 1;
-  border-radius: var(--mds-radius-8);
-  border: 1.5px solid transparent;
+  font-style: normal;
+  font-weight: var(--mds-font-weight-bold);
+  border: var(--btn-border-width, 0px) solid transparent;
   cursor: pointer;
   white-space: nowrap;
   text-decoration: none;
   user-select: none;
   transition:
-    background-color var(--mds-transition-fast),
+    background var(--mds-transition-fast),
     color var(--mds-transition-fast),
     border-color var(--mds-transition-fast),
     box-shadow var(--mds-transition-fast);
@@ -33,87 +33,94 @@
 
 /* ---- Sizes ---- */
 .sm {
-  height: 32px;
-  padding: 0 var(--mds-space-12);
-  font-size: var(--mds-font-size-md);
+  --btn-border-width: 1px;
+  height: 24px;
+  min-height: 24px;
+  padding: 4px var(--mds-space-16);
+  font-size: var(--mds-font-size-sm);    /* 12px */
+  line-height: var(--mds-line-height-16); /* 16px */
+  border-radius: var(--mds-radius-4);
 }
 
 .md {
-  height: 40px;
-  padding: 0 var(--mds-space-16);
-  font-size: var(--mds-font-size-md);
+  --btn-border-width: 2px;
+  height: 44px;
+  min-height: 44px;
+  padding: 8px 20px;
+  font-size: var(--mds-font-size-base);  /* 16px */
+  line-height: var(--mds-line-height-24); /* 24px */
+  border-radius: var(--mds-radius-8);
 }
 
 .lg {
-  height: 48px;
-  padding: 0 var(--mds-space-24);
-  font-size: var(--mds-font-size-base);
+  --btn-border-width: 2px;
+  height: 52px;
+  min-height: 52px;
+  padding: 12px var(--mds-space-28);
+  font-size: var(--mds-font-size-base);  /* 16px */
+  line-height: var(--mds-line-height-24); /* 24px */
+  border-radius: var(--mds-radius-8);
 }
 
-/* ---- Variants ---- */
-
-/* Primary */
+/* ---- Variant: Filled (primary) ---- */
 .primary {
-  background-color: var(--mds-brand-base);
+  background: var(--mds-brand-base);
   color: var(--mds-text-white);
-  border-color: var(--mds-brand-base);
+  border-color: transparent;
 }
 
 .primary:hover:not(:disabled) {
-  background-color: var(--mds-brand-strong);
-  border-color: var(--mds-brand-strong);
+  /* Figma: linear-gradient(rgba(0,0,0,0.05)), #7B52E0 */
+  background: linear-gradient(var(--mds-hover), var(--mds-hover)), var(--mds-brand-base);
 }
 
 .primary:active:not(:disabled) {
-  background-color: var(--mds-purple-700);
-  border-color: var(--mds-purple-700);
+  background: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), var(--mds-brand-base);
 }
 
-/* Secondary */
+/* ---- Variant: Outlined (secondary) ---- */
 .secondary {
-  background-color: transparent;
-  color: var(--mds-brand-base);
-  border-color: var(--mds-brand-base);
+  background: transparent;
+  color: var(--mds-brand-strong);
+  border-color: var(--mds-brand-strong);
 }
 
 .secondary:hover:not(:disabled) {
-  background-color: var(--mds-fill-accent-subtle);
+  background: var(--mds-fill-accent-subtle); /* #F0EEFF */
 }
 
 .secondary:active:not(:disabled) {
-  background-color: var(--mds-purple-200);
+  background: var(--mds-purple-200);
 }
 
-/* Destructive */
+/* ---- Variant: Destructive ---- */
 .destructive {
-  background-color: var(--mds-danger-base);
+  background: var(--mds-danger-base);
   color: var(--mds-text-white);
-  border-color: var(--mds-danger-base);
+  border-color: transparent;
 }
 
 .destructive:hover:not(:disabled) {
-  background-color: var(--mds-danger-strong);
-  border-color: var(--mds-danger-strong);
+  background: linear-gradient(var(--mds-hover), var(--mds-hover)), var(--mds-danger-base);
 }
 
 .destructive:active:not(:disabled) {
-  background-color: var(--mds-red-800);
-  border-color: var(--mds-red-800);
+  background: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.12)), var(--mds-danger-base);
 }
 
-/* Ghost */
+/* ---- Variant: Ghost ---- */
 .ghost {
-  background-color: transparent;
+  background: transparent;
   color: var(--mds-text-primary);
   border-color: transparent;
 }
 
 .ghost:hover:not(:disabled) {
-  background-color: var(--mds-hover);
+  background: var(--mds-hover);
 }
 
 .ghost:active:not(:disabled) {
-  background-color: var(--mds-fill-neutral-2);
+  background: var(--mds-fill-neutral-2);
 }
 
 /* ---- Full Width ---- */
