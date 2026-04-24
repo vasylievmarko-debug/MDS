@@ -12,11 +12,11 @@ html {
 }
 
 body {
-  font-family: var(--mds-font-family-sans);
-  font-size: var(--mds-font-size-md);
-  line-height: var(--mds-line-height-normal);
-  color: var(--mds-color-neutral-1000);
-  background-color: var(--mds-color-neutral-0);
+  font-family: var(--mds-font-family);
+  font-size: var(--mds-font-size-base);
+  line-height: var(--mds-line-height-24);
+  color: var(--mds-text-primary);
+  background-color: var(--mds-bg-page-1);
 }
 
 img,

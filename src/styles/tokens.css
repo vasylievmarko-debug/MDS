@@ -1,88 +1,322 @@
 /* ============================================================
    MDS Design Tokens
-   Generated from src/tokens/base.json
-   Do not edit manually — run: npm run tokens:build
+   Source: figma-import/variables-figma-first.json
    ============================================================ */
 
+/* ---- Layer 1: Primitive Colors ---- */
 :root {
-  /* --- Colors: Brand --- */
-  --mds-color-brand-primary:   #0052CC;
-  --mds-color-brand-secondary: #00B8D9;
+  /* Neutral palette */
+  --mds-neutral-0:   #FFFFFF;
+  --mds-neutral-50:  #FAFAFC;
+  --mds-neutral-100: #F4F4F8;
+  --mds-neutral-150: #EDEDF3;
+  --mds-neutral-200: #E4E4EC;
+  --mds-neutral-250: #D8D8E4;
+  --mds-neutral-300: #CACAD8;
+  --mds-neutral-350: #B8B8CA;
+  --mds-neutral-400: #A5A5BA;
+  --mds-neutral-450: #9090A8;
+  --mds-neutral-500: #7C7C94;
+  --mds-neutral-550: #686880;
+  --mds-neutral-600: #565668;
+  --mds-neutral-650: #474758;
+  --mds-neutral-700: #393948;
+  --mds-neutral-750: #2E2E3C;
+  --mds-neutral-800: #242430;
+  --mds-neutral-850: #1A1A24;
+  --mds-neutral-900: #12121A;
+  --mds-neutral-950: #0A0A10;
 
-  /* --- Colors: Neutral --- */
-  --mds-color-neutral-0:    #FFFFFF;
-  --mds-color-neutral-100:  #F4F5F7;
-  --mds-color-neutral-200:  #EBECF0;
-  --mds-color-neutral-300:  #DFE1E6;
-  --mds-color-neutral-400:  #C1C7D0;
-  --mds-color-neutral-500:  #B3BAC5;
-  --mds-color-neutral-600:  #A5ADBA;
-  --mds-color-neutral-700:  #8993A4;
-  --mds-color-neutral-800:  #7A869A;
-  --mds-color-neutral-900:  #6B778C;
-  --mds-color-neutral-1000: #172B4D;
+  /* Purple (Brand) */
+  --mds-purple-100: #F0EEFF;
+  --mds-purple-200: #D9D1FF;
+  --mds-purple-300: #B8A4F8;
+  --mds-purple-400: #9478EF;
+  --mds-purple-500: #7B52E0;
+  --mds-purple-600: #6440CC;
+  --mds-purple-700: #4E2FAA;
+  --mds-purple-800: #3A2088;
+  --mds-purple-900: #261266;
 
-  /* --- Colors: Feedback --- */
-  --mds-color-feedback-success: #36B37E;
-  --mds-color-feedback-warning: #FFAB00;
-  --mds-color-feedback-error:   #FF5630;
-  --mds-color-feedback-info:    #0065FF;
+  /* Red (Danger) */
+  --mds-red-100: #FDECEA;
+  --mds-red-200: #FAB8B2;
+  --mds-red-300: #FF6B5E;
+  --mds-red-400: #E84035;
+  --mds-red-500: #D93025;
+  --mds-red-600: #B82018;
+  --mds-red-700: #A8201A;
+  --mds-red-800: #96150F;
+  --mds-red-900: #6E0C08;
 
-  /* --- Spacing --- */
-  --mds-spacing-0:  0px;
-  --mds-spacing-1:  4px;
-  --mds-spacing-2:  8px;
-  --mds-spacing-3:  12px;
-  --mds-spacing-4:  16px;
-  --mds-spacing-5:  20px;
-  --mds-spacing-6:  24px;
-  --mds-spacing-8:  32px;
-  --mds-spacing-10: 40px;
-  --mds-spacing-12: 48px;
-  --mds-spacing-16: 64px;
+  /* Yellow (Warning) */
+  --mds-yellow-100: #FEF6E0;
+  --mds-yellow-200: #FDE4A0;
+  --mds-yellow-300: #FFB020;
+  --mds-yellow-400: #E09500;
+  --mds-yellow-500: #C47200;
+  --mds-yellow-600: #A85E00;
+  --mds-yellow-700: #965500;
+  --mds-yellow-800: #8A4A00;
+  --mds-yellow-900: #6E3800;
 
-  /* --- Typography: Font Family --- */
-  --mds-font-family-sans: 'Inter', system-ui, sans-serif;
+  /* Green (Success) */
+  --mds-green-100: #E6F7EE;
+  --mds-green-200: #A8E8C8;
+  --mds-green-300: #3DD68C;
+  --mds-green-400: #28A85E;
+  --mds-green-500: #1A8A4A;
+  --mds-green-600: #157040;
+  --mds-green-700: #136635;
+  --mds-green-800: #105834;
+  --mds-green-900: #0A3E24;
+}
+
+/* ---- Layer 2: Semantic Colors — Light Theme (default) ---- */
+:root,
+[data-theme="light"] {
+  /* Background */
+  --mds-bg-page-1: var(--mds-neutral-50);
+  --mds-bg-page-2: var(--mds-neutral-100);
+  --mds-surface-1: var(--mds-neutral-0);
+  --mds-surface-2: var(--mds-neutral-100);
+  --mds-surface-3: var(--mds-neutral-150);
+  --mds-surface-4: var(--mds-neutral-200);
+
+  /* Brand */
+  --mds-brand-base:   var(--mds-purple-500);
+  --mds-brand-strong: var(--mds-purple-600);
+
+  /* Status */
+  --mds-danger-base:   var(--mds-red-500);
+  --mds-danger-strong: var(--mds-red-700);
+  --mds-warning-base:   var(--mds-yellow-500);
+  --mds-warning-strong: var(--mds-yellow-700);
+  --mds-success-base:   var(--mds-green-500);
+  --mds-success-strong: var(--mds-green-700);
+
+  /* Text */
+  --mds-text-primary:   var(--mds-neutral-900);
+  --mds-text-secondary: var(--mds-neutral-600);
+  --mds-text-accent:    var(--mds-purple-600);
+  --mds-text-danger:    var(--mds-red-700);
+  --mds-text-warning:   var(--mds-yellow-700);
+  --mds-text-success:   var(--mds-green-700);
+  --mds-text-white:     var(--mds-neutral-0);
+  --mds-text-dark:      var(--mds-neutral-950);
+
+  /* Stroke */
+  --mds-stroke-default:           var(--mds-neutral-200);
+  --mds-stroke-strong:            var(--mds-neutral-300);
+  --mds-stroke-interactive:       var(--mds-neutral-550);
+  --mds-stroke-interactive-strong: var(--mds-neutral-650);
+  --mds-stroke-interactive-max:   var(--mds-neutral-800);
+  --mds-stroke-focus:             var(--mds-purple-600);
+  --mds-stroke-accent:            var(--mds-purple-600);
+  --mds-stroke-danger:            var(--mds-red-700);
+  --mds-stroke-warning:           var(--mds-yellow-700);
+  --mds-stroke-success:           var(--mds-green-700);
+
+  /* Fill */
+  --mds-fill-neutral-0: var(--mds-neutral-0);
+  --mds-fill-neutral-1: var(--mds-neutral-100);
+  --mds-fill-neutral-2: var(--mds-neutral-150);
+  --mds-fill-neutral-3: var(--mds-neutral-200);
+  --mds-fill-neutral-4: var(--mds-neutral-300);
+  --mds-fill-neutral-5: var(--mds-neutral-400);
+  --mds-fill-neutral-6: var(--mds-neutral-500);
+  --mds-fill-neutral-7: var(--mds-neutral-600);
+  --mds-fill-neutral-8: var(--mds-neutral-700);
+  --mds-fill-danger:         var(--mds-red-500);
+  --mds-fill-danger-subtle:  var(--mds-red-200);
+  --mds-fill-warning:        var(--mds-yellow-500);
+  --mds-fill-warning-subtle: var(--mds-yellow-200);
+  --mds-fill-success:        var(--mds-green-500);
+  --mds-fill-success-subtle: var(--mds-green-100);
+  --mds-fill-accent:         var(--mds-purple-500);
+  --mds-fill-accent-subtle:  var(--mds-purple-100);
+
+  /* Special */
+  --mds-hover:   #0000000D;
+  --mds-overlay: #1A1A241A;
+}
+
+/* ---- Layer 2: Semantic Colors — Dark Theme ---- */
+[data-theme="dark"],
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    /* Background */
+    --mds-bg-page-1: var(--mds-neutral-950);
+    --mds-bg-page-2: var(--mds-neutral-900);
+    --mds-surface-1: var(--mds-neutral-850);
+    --mds-surface-2: var(--mds-neutral-800);
+    --mds-surface-3: var(--mds-neutral-750);
+    --mds-surface-4: var(--mds-neutral-700);
+
+    /* Status (stronger for readability on dark) */
+    --mds-danger-strong:  var(--mds-red-300);
+    --mds-warning-strong: var(--mds-yellow-300);
+    --mds-success-strong: var(--mds-green-300);
+
+    /* Text */
+    --mds-text-primary:   var(--mds-neutral-100);
+    --mds-text-secondary: var(--mds-neutral-400);
+    --mds-text-danger:    var(--mds-red-300);
+    --mds-text-warning:   var(--mds-yellow-300);
+    --mds-text-success:   var(--mds-green-300);
+
+    /* Stroke */
+    --mds-stroke-default:            var(--mds-neutral-700);
+    --mds-stroke-interactive:        var(--mds-neutral-450);
+    --mds-stroke-interactive-strong: var(--mds-neutral-350);
+    --mds-stroke-interactive-max:    var(--mds-neutral-250);
+    --mds-stroke-danger:             var(--mds-red-300);
+    --mds-stroke-warning:            var(--mds-yellow-300);
+    --mds-stroke-success:            var(--mds-green-300);
+
+    /* Fill */
+    --mds-fill-neutral-0: var(--mds-neutral-800);
+    --mds-fill-neutral-1: var(--mds-neutral-800);
+    --mds-fill-neutral-2: var(--mds-neutral-750);
+    --mds-fill-neutral-3: var(--mds-neutral-700);
+    --mds-fill-neutral-4: var(--mds-neutral-600);
+    --mds-fill-neutral-5: var(--mds-neutral-500);
+    --mds-fill-neutral-6: var(--mds-neutral-400);
+    --mds-fill-neutral-7: var(--mds-neutral-300);
+    --mds-fill-neutral-8: var(--mds-neutral-200);
+    --mds-fill-danger-subtle:  var(--mds-red-900);
+    --mds-fill-warning-subtle: var(--mds-yellow-900);
+    --mds-fill-success-subtle: var(--mds-green-900);
+    --mds-fill-accent-subtle:  var(--mds-purple-900);
+  }
+}
+
+[data-theme="dark"] {
+  /* Background */
+  --mds-bg-page-1: var(--mds-neutral-950);
+  --mds-bg-page-2: var(--mds-neutral-900);
+  --mds-surface-1: var(--mds-neutral-850);
+  --mds-surface-2: var(--mds-neutral-800);
+  --mds-surface-3: var(--mds-neutral-750);
+  --mds-surface-4: var(--mds-neutral-700);
+
+  /* Status */
+  --mds-danger-strong:  var(--mds-red-300);
+  --mds-warning-strong: var(--mds-yellow-300);
+  --mds-success-strong: var(--mds-green-300);
+
+  /* Text */
+  --mds-text-primary:   var(--mds-neutral-100);
+  --mds-text-secondary: var(--mds-neutral-400);
+  --mds-text-danger:    var(--mds-red-300);
+  --mds-text-warning:   var(--mds-yellow-300);
+  --mds-text-success:   var(--mds-green-300);
+
+  /* Stroke */
+  --mds-stroke-default:            var(--mds-neutral-700);
+  --mds-stroke-interactive:        var(--mds-neutral-450);
+  --mds-stroke-interactive-strong: var(--mds-neutral-350);
+  --mds-stroke-interactive-max:    var(--mds-neutral-250);
+  --mds-stroke-danger:             var(--mds-red-300);
+  --mds-stroke-warning:            var(--mds-yellow-300);
+  --mds-stroke-success:            var(--mds-green-300);
+
+  /* Fill */
+  --mds-fill-neutral-0: var(--mds-neutral-800);
+  --mds-fill-neutral-1: var(--mds-neutral-800);
+  --mds-fill-neutral-2: var(--mds-neutral-750);
+  --mds-fill-neutral-3: var(--mds-neutral-700);
+  --mds-fill-neutral-4: var(--mds-neutral-600);
+  --mds-fill-neutral-5: var(--mds-neutral-500);
+  --mds-fill-neutral-6: var(--mds-neutral-400);
+  --mds-fill-neutral-7: var(--mds-neutral-300);
+  --mds-fill-neutral-8: var(--mds-neutral-200);
+  --mds-fill-danger-subtle:  var(--mds-red-900);
+  --mds-fill-warning-subtle: var(--mds-yellow-900);
+  --mds-fill-success-subtle: var(--mds-green-900);
+  --mds-fill-accent-subtle:  var(--mds-purple-900);
+}
+
+/* ---- Typography ---- */
+:root {
+  --mds-font-family: 'Open Sans', system-ui, sans-serif;
   --mds-font-family-mono: 'JetBrains Mono', monospace;
 
-  /* --- Typography: Font Size --- */
-  --mds-font-size-xs:  12px;
-  --mds-font-size-sm:  14px;
-  --mds-font-size-md:  16px;
-  --mds-font-size-lg:  18px;
-  --mds-font-size-xl:  20px;
-  --mds-font-size-2xl: 24px;
-  --mds-font-size-3xl: 30px;
-  --mds-font-size-4xl: 36px;
+  /* Font sizes */
+  --mds-font-size-xs:   10px;
+  --mds-font-size-sm:   12px;
+  --mds-font-size-md:   14px;
+  --mds-font-size-base: 16px;
+  --mds-font-size-lg:   20px;
+  --mds-font-size-xl:   24px;
+  --mds-font-size-2xl:  32px;
+  --mds-font-size-3xl:  40px;
+  --mds-font-size-4xl:  48px;
 
-  /* --- Typography: Font Weight --- */
+  /* Line heights */
+  --mds-line-height-16: 16px;
+  --mds-line-height-20: 20px;
+  --mds-line-height-24: 24px;
+  --mds-line-height-28: 28px;
+  --mds-line-height-36: 36px;
+  --mds-line-height-48: 48px;
+
+  /* Font weights */
   --mds-font-weight-regular:  400;
-  --mds-font-weight-medium:   500;
   --mds-font-weight-semibold: 600;
   --mds-font-weight-bold:     700;
+}
 
-  /* --- Typography: Line Height --- */
-  --mds-line-height-tight:   1.25;
-  --mds-line-height-normal:  1.5;
-  --mds-line-height-relaxed: 1.75;
+/* ---- Spacing ---- */
+:root {
+  --mds-space-4:  4px;
+  --mds-space-8:  8px;
+  --mds-space-12: 12px;
+  --mds-space-16: 16px;
+  --mds-space-20: 20px;
+  --mds-space-24: 24px;
+  --mds-space-28: 28px;
+  --mds-space-32: 32px;
+  --mds-space-40: 40px;
+  --mds-space-48: 48px;
+  --mds-space-64: 64px;
+  --mds-space-80: 80px;
+  --mds-space-96: 96px;
+}
 
-  /* --- Border Radius --- */
-  --mds-radius-none: 0px;
-  --mds-radius-sm:   4px;
-  --mds-radius-md:   8px;
-  --mds-radius-lg:   12px;
-  --mds-radius-xl:   16px;
+/* ---- Border Radius ---- */
+:root {
+  --mds-radius-2:    2px;
+  --mds-radius-4:    4px;
+  --mds-radius-8:    8px;
+  --mds-radius-12:   12px;
+  --mds-radius-16:   16px;
+  --mds-radius-24:   24px;
   --mds-radius-full: 9999px;
+}
 
-  /* --- Shadows --- */
+/* ---- Z-index ---- */
+:root {
+  --mds-z-base:     0;
+  --mds-z-raised:   10;
+  --mds-z-dropdown: 100;
+  --mds-z-sticky:   200;
+  --mds-z-overlay:  300;
+  --mds-z-modal:    400;
+  --mds-z-toast:    500;
+  --mds-z-tooltip:  600;
+}
+
+/* ---- Shadows ---- */
+:root {
   --mds-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --mds-shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.10), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --mds-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
 
-  /* --- Focus Ring (WCAG AA) --- */
-  --mds-focus-ring: 0 0 0 3px rgba(0, 82, 204, 0.4);
-
-  /* --- Transition --- */
+/* ---- Focus Ring (WCAG AA) ---- */
+:root {
+  --mds-focus-ring: 0 0 0 3px color-mix(in srgb, var(--mds-stroke-focus) 40%, transparent);
   --mds-transition-fast:   80ms ease;
   --mds-transition-normal: 160ms ease;
 }
