@@ -4,11 +4,12 @@
     "sm":   { "$type": "number", "$value": 12 },
     "md":   { "$type": "number", "$value": 14 },
     "base": { "$type": "number", "$value": 16 },
-    "lg":   { "$type": "number", "$value": 20 },
-    "xl":   { "$type": "number", "$value": 24 },
-    "2xl":  { "$type": "number", "$value": 32 },
-    "3xl":  { "$type": "number", "$value": 40 },
-    "4xl":  { "$type": "number", "$value": 48 }
+    "lg":   { "$type": "number", "$value": 18 },
+    "xl":   { "$type": "number", "$value": 20 },
+    "2xl":  { "$type": "number", "$value": 24 },
+    "3xl":  { "$type": "number", "$value": 32 },
+    "4xl":  { "$type": "number", "$value": 40 },
+    "5xl":  { "$type": "number", "$value": 48 }
   },
   "Line height": {
     "LH-16": { "$type": "number", "$value": 16 },
@@ -17,5 +18,259 @@
     "LH-28": { "$type": "number", "$value": 28 },
     "LH-36": { "$type": "number", "$value": 36 },
     "LH-48": { "$type": "number", "$value": 48 }
+  },
+  "Font Family": {
+    "sans": { "$type": "fontFamily", "$value": "Nunito" }
+  },
+  "Font Weight": {
+    "regular": { "$type": "number", "$value": 400 },
+    "semibold": { "$type": "number", "$value": 600 },
+    "bold": { "$type": "number", "$value": 700 }
+  },
+  "Headings": {
+    "H1": {
+      "fontSize": { "$type": "number", "$value": "{Font size.5xl}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-48}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.bold}" }
+    },
+    "H2": {
+      "fontSize": { "$type": "number", "$value": "{Font size.2xl}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-36}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.bold}" }
+    },
+    "H3": {
+      "fontSize": { "$type": "number", "$value": "{Font size.xl}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-28}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.bold}" }
+    },
+    "H4": {
+      "fontSize": { "$type": "number", "$value": "{Font size.base}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-24}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.bold}" }
+    }
+  },
+  "Large Paragraph": {
+    "Regular": {
+      "fontSize": { "$type": "number", "$value": "{Font size.lg}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-28}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" }
+    },
+    "Strong": {
+      "fontSize": { "$type": "number", "$value": "{Font size.lg}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-28}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.semibold}" }
+    },
+    "Heavy": {
+      "fontSize": { "$type": "number", "$value": "{Font size.lg}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-28}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.bold}" }
+    },
+    "Italics": {
+      "fontSize": { "$type": "number", "$value": "{Font size.lg}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-28}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" },
+      "fontStyle": { "$type": "string", "$value": "italic" }
+    },
+    "Underline text": {
+      "fontSize": { "$type": "number", "$value": "{Font size.lg}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-28}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" },
+      "textDecoration": { "$type": "string", "$value": "underline" }
+    },
+    "Strikethrough": {
+      "fontSize": { "$type": "number", "$value": "{Font size.lg}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-28}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" },
+      "textDecoration": { "$type": "string", "$value": "line-through" }
+    },
+    "Overline": {
+      "fontSize": { "$type": "number", "$value": "{Font size.lg}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-28}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" },
+      "textDecoration": { "$type": "string", "$value": "overline" }
+    },
+    "Heavy Underline": {
+      "fontSize": { "$type": "number", "$value": "{Font size.lg}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-28}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.bold}" },
+      "textDecoration": { "$type": "string", "$value": "underline" }
+    }
+  },
+  "Paragraph": {
+    "Regular": {
+      "fontSize": { "$type": "number", "$value": "{Font size.base}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-24}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" }
+    },
+    "Strong": {
+      "fontSize": { "$type": "number", "$value": "{Font size.base}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-24}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.semibold}" }
+    },
+    "Heavy": {
+      "fontSize": { "$type": "number", "$value": "{Font size.base}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-24}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.bold}" }
+    },
+    "Italics": {
+      "fontSize": { "$type": "number", "$value": "{Font size.base}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-24}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" },
+      "fontStyle": { "$type": "string", "$value": "italic" }
+    },
+    "Underline text": {
+      "fontSize": { "$type": "number", "$value": "{Font size.base}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-24}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" },
+      "textDecoration": { "$type": "string", "$value": "underline" }
+    },
+    "Strikethrough": {
+      "fontSize": { "$type": "number", "$value": "{Font size.base}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-24}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" },
+      "textDecoration": { "$type": "string", "$value": "line-through" }
+    },
+    "Overline": {
+      "fontSize": { "$type": "number", "$value": "{Font size.base}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-24}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" },
+      "textDecoration": { "$type": "string", "$value": "overline" }
+    },
+    "Heavy Underline": {
+      "fontSize": { "$type": "number", "$value": "{Font size.base}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-24}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.bold}" },
+      "textDecoration": { "$type": "string", "$value": "underline" }
+    }
+  },
+  "Small Caption": {
+    "Regular": {
+      "fontSize": { "$type": "number", "$value": "{Font size.md}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-20}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" }
+    },
+    "Strong": {
+      "fontSize": { "$type": "number", "$value": "{Font size.md}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-20}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.semibold}" }
+    },
+    "Heavy": {
+      "fontSize": { "$type": "number", "$value": "{Font size.md}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-20}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.bold}" }
+    },
+    "Italics": {
+      "fontSize": { "$type": "number", "$value": "{Font size.md}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-20}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" },
+      "fontStyle": { "$type": "string", "$value": "italic" }
+    },
+    "Underline text": {
+      "fontSize": { "$type": "number", "$value": "{Font size.md}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-20}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" },
+      "textDecoration": { "$type": "string", "$value": "underline" }
+    },
+    "Strikethrough": {
+      "fontSize": { "$type": "number", "$value": "{Font size.md}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-20}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" },
+      "textDecoration": { "$type": "string", "$value": "line-through" }
+    },
+    "Overline": {
+      "fontSize": { "$type": "number", "$value": "{Font size.md}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-20}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" },
+      "textDecoration": { "$type": "string", "$value": "overline" }
+    },
+    "Heavy Underline": {
+      "fontSize": { "$type": "number", "$value": "{Font size.md}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-20}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.bold}" },
+      "textDecoration": { "$type": "string", "$value": "underline" }
+    }
+  },
+  "Extra Small Caption": {
+    "Regular": {
+      "fontSize": { "$type": "number", "$value": "{Font size.sm}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-16}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" }
+    },
+    "Strong": {
+      "fontSize": { "$type": "number", "$value": "{Font size.sm}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-16}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.semibold}" }
+    },
+    "Heavy": {
+      "fontSize": { "$type": "number", "$value": "{Font size.sm}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-16}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.bold}" }
+    },
+    "Italics": {
+      "fontSize": { "$type": "number", "$value": "{Font size.sm}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-16}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" },
+      "fontStyle": { "$type": "string", "$value": "italic" }
+    },
+    "Underline text": {
+      "fontSize": { "$type": "number", "$value": "{Font size.sm}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-16}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" },
+      "textDecoration": { "$type": "string", "$value": "underline" }
+    },
+    "Strikethrough": {
+      "fontSize": { "$type": "number", "$value": "{Font size.sm}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-16}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" },
+      "textDecoration": { "$type": "string", "$value": "line-through" }
+    },
+    "Overline": {
+      "fontSize": { "$type": "number", "$value": "{Font size.sm}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-16}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.regular}" },
+      "textDecoration": { "$type": "string", "$value": "overline" }
+    },
+    "Heavy Underline": {
+      "fontSize": { "$type": "number", "$value": "{Font size.sm}" },
+      "lineHeight": { "$type": "number", "$value": "{Line height.LH-16}" },
+      "fontFamily": { "$type": "fontFamily", "$value": "{Font Family.sans}" },
+      "fontWeight": { "$type": "number", "$value": "{Font Weight.bold}" },
+      "textDecoration": { "$type": "string", "$value": "underline" }
+    }
   }
 }

@@ -98,7 +98,7 @@ const fontSizes = [
 ]
 
 const base: React.CSSProperties = {
-  fontFamily: "'Open Sans', system-ui, sans-serif",
+  fontFamily: "'Nunito', system-ui, sans-serif",
   color: '#12121A',
   margin: 0,
 }
@@ -106,7 +106,7 @@ const base: React.CSSProperties = {
 function Meta({ size, lh, token }: { size: number; lh: number; token: string }) {
   return (
     <div style={{ display: 'flex', gap: 16, marginBottom: 4 }}>
-      <span style={{ fontSize: 11, color: '#7C7C94', fontFamily: "'Open Sans', system-ui, sans-serif" }}>
+      <span style={{ fontSize: 11, color: '#7C7C94', fontFamily: "'Nunito', system-ui, sans-serif" }}>
         {size}px / {lh}px
       </span>
       <code style={{ fontSize: 11, color: '#7B52E0', background: '#F0EEFF', padding: '1px 6px', borderRadius: 4 }}>
@@ -123,7 +123,7 @@ function Divider() {
 export const Заголовки = () => (
   <div style={{ ...base, maxWidth: 800 }}>
     <p style={{ fontSize: 14, color: '#565668', marginBottom: 32, lineHeight: '20px' }}>
-      Шрифт: <strong>Open Sans</strong>. Все заголовки — SemiBold/Bold.
+      Шрифт: <strong>Nunito</strong>. Все заголовки — SemiBold/Bold.
     </p>
     {headings.map(({ name, tag: Tag, fontSize, lineHeight, fontWeight, sample }) => (
       <div key={name} style={{ marginBottom: 32 }}>
@@ -131,7 +131,7 @@ export const Заголовки = () => (
         <Tag style={{ ...base, fontSize, lineHeight: `${lineHeight}px`, fontWeight }}>
           {sample}
         </Tag>
-        <div style={{ fontSize: 11, color: '#9090A8', marginTop: 4, fontFamily: "'Open Sans', system-ui" }}>
+        <div style={{ fontSize: 11, color: '#9090A8', marginTop: 4, fontFamily: "'Nunito', system-ui" }}>
           {name} · {fontWeight} · {fontSize}/{lineHeight}px
         </div>
       </div>
@@ -164,7 +164,7 @@ export const Текст = () => (
               }}>
                 Быстрая коричневая лиса перепрыгнула через ленивую собаку
               </span>
-              <span style={{ fontSize: 11, color: '#9090A8', whiteSpace: 'nowrap', fontFamily: "'Open Sans', system-ui" }}>
+              <span style={{ fontSize: 11, color: '#9090A8', whiteSpace: 'nowrap', fontFamily: "'Nunito', system-ui" }}>
                 {name} · {fontWeight}
               </span>
             </div>
@@ -187,9 +187,9 @@ export const Шкала = () => (
           <code style={{ fontSize: 12, color: '#7B52E0', background: '#F0EEFF', padding: '2px 8px', borderRadius: 4, minWidth: 160, fontFamily: 'monospace' }}>
             {token}
           </code>
-          <span style={{ fontSize: 12, color: '#9090A8', minWidth: 40, fontFamily: "'Open Sans', system-ui" }}>{px}px</span>
+          <span style={{ fontSize: 12, color: '#9090A8', minWidth: 40, fontFamily: "'Nunito', system-ui" }}>{px}px</span>
           <span style={{ ...base, fontSize: px, fontWeight: 400, lineHeight: 1.2 }}>
-            Open Sans
+            Nunito
           </span>
         </div>
       ))}
