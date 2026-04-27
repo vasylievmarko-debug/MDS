@@ -239,7 +239,7 @@
 
 /* ---- Typography ---- */
 :root {
-  --mds-font-family: 'Open Sans', system-ui, sans-serif;
+  --mds-font-family: 'Nunito', system-ui, sans-serif;
   --mds-font-family-mono: 'JetBrains Mono', monospace;
 
   /* Font sizes */
