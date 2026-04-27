@@ -22,7 +22,20 @@ const preview: Preview = {
         ],
       },
     },
+    backgrounds: { disable: true },
   },
+  decorators: [
+    (Story) => (
+      <div style={{
+        fontFamily: 'var(--mds-font-family)',
+        color: 'var(--mds-text-primary)',
+        background: 'var(--mds-bg-page-1)',
+        minHeight: '100vh',
+      }}>
+        <Story />
+      </div>
+    ),
+  ],
 }
 
 export default preview
