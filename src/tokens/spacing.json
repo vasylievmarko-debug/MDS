@@ -1,0 +1,150 @@
+{
+  "Spacing": {
+    "Space-4": {
+      "$type": "dimension",
+      "$value": "4px",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:18:368",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "Space-8": {
+      "$type": "dimension",
+      "$value": "8px",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:18:369",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "Space-12": {
+      "$type": "dimension",
+      "$value": "12px",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:18:370",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "Space-16": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:18:371",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "Space-20": {
+      "$type": "dimension",
+      "$value": "20px",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:18:380",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "Space-24": {
+      "$type": "dimension",
+      "$value": "24px",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:18:372",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "Space-28": {
+      "$type": "dimension",
+      "$value": "28px",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:18:373",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "Space-32": {
+      "$type": "dimension",
+      "$value": "32px",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:18:374",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "Space-40": {
+      "$type": "dimension",
+      "$value": "40px",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:18:375",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "Space-48": {
+      "$type": "dimension",
+      "$value": "48px",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:18:376",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "Space-64": {
+      "$type": "dimension",
+      "$value": "64px",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:18:377",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "Space-80": {
+      "$type": "dimension",
+      "$value": "80px",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:18:378",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.isOverride": true
+      }
+    },
+    "Space-96": {
+      "$type": "dimension",
+      "$value": "96px",
+      "$extensions": {
+        "com.figma.variableId": "VariableID:18:379",
+        "com.figma.scopes": [
+          "ALL_SCOPES"
+        ],
+        "com.figma.isOverride": true
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Mode 1"
+  }
+}
