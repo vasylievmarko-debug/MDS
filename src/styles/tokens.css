@@ -98,24 +98,24 @@
   /* Text */
   --mds-text-primary:   var(--mds-neutral-900);
   --mds-text-secondary: var(--mds-neutral-600);
-  --mds-text-accent:    var(--mds-purple-600);
-  --mds-text-danger:    var(--mds-red-700);
-  --mds-text-warning:   var(--mds-yellow-700);
-  --mds-text-success:   var(--mds-green-700);
+  --mds-text-accent:    var(--mds-brand-strong);   /* {Brand.Strong} */
+  --mds-text-danger:    var(--mds-danger-strong);  /* {Danger.Strong} */
+  --mds-text-warning:   var(--mds-warning-strong); /* {Warning.Strong} */
+  --mds-text-success:   var(--mds-success-strong); /* {Success.Strong} */
   --mds-text-white:     var(--mds-neutral-0);
   --mds-text-dark:      var(--mds-neutral-950);
 
   /* Stroke */
-  --mds-stroke-default:           var(--mds-neutral-200);
-  --mds-stroke-strong:            var(--mds-neutral-300);
-  --mds-stroke-interactive:       var(--mds-neutral-550);
+  --mds-stroke-default:            var(--mds-neutral-200);
+  --mds-stroke-strong:             var(--mds-neutral-300);
+  --mds-stroke-interactive:        var(--mds-neutral-550);
   --mds-stroke-interactive-strong: var(--mds-neutral-650);
-  --mds-stroke-interactive-max:   var(--mds-neutral-800);
-  --mds-stroke-focus:             var(--mds-purple-600);
-  --mds-stroke-accent:            var(--mds-purple-600);
-  --mds-stroke-danger:            var(--mds-red-700);
-  --mds-stroke-warning:           var(--mds-yellow-700);
-  --mds-stroke-success:           var(--mds-green-700);
+  --mds-stroke-interactive-max:    var(--mds-neutral-800);
+  --mds-stroke-focus:              var(--mds-brand-strong);   /* {Brand.Strong} */
+  --mds-stroke-accent:             var(--mds-brand-strong);   /* {Brand.Strong} */
+  --mds-stroke-danger:             var(--mds-danger-strong);  /* {Danger.Strong} */
+  --mds-stroke-warning:            var(--mds-warning-strong); /* {Warning.Strong} */
+  --mds-stroke-success:            var(--mds-success-strong); /* {Success.Strong} */
 
   /* Fill */
   --mds-fill-neutral-0: var(--mds-neutral-0);
@@ -127,18 +127,18 @@
   --mds-fill-neutral-6: var(--mds-neutral-500);
   --mds-fill-neutral-7: var(--mds-neutral-600);
   --mds-fill-neutral-8: var(--mds-neutral-700);
-  --mds-fill-danger:         var(--mds-red-500);
+  --mds-fill-danger:         var(--mds-danger-base);   /* {Danger.Base} */
   --mds-fill-danger-subtle:  var(--mds-red-200);
-  --mds-fill-warning:        var(--mds-yellow-500);
+  --mds-fill-warning:        var(--mds-warning-base);  /* {Warning.Base} */
   --mds-fill-warning-subtle: var(--mds-yellow-200);
-  --mds-fill-success:        var(--mds-green-500);
+  --mds-fill-success:        var(--mds-success-base);  /* {Success.Base} */
   --mds-fill-success-subtle: var(--mds-green-100);
-  --mds-fill-accent:         var(--mds-purple-500);
+  --mds-fill-accent:         var(--mds-brand-base);    /* {Brand.Base} */
   --mds-fill-accent-subtle:  var(--mds-purple-100);
 
   /* Special */
-  --mds-hover:   #0000000D;
-  --mds-overlay: #1A1A241A;
+  --mds-hover:   rgba(0, 0, 0, 0.05);        /* Especial/Hover */
+  --mds-overlay: rgba(26, 26, 36, 0.10);     /* Especial/Overlay */
 }
 
 /* ---- Layer 2: Semantic Colors — Dark Theme ---- */
